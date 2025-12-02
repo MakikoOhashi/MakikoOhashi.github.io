@@ -1,10 +1,10 @@
-const { 
+let {
   name = "Your Name",
   title = "Aspiring Developer",
   tagline = "Building practical apps"
 } = Astro.props;
 
-const projects = [
+let projects = [
   {
     id: 1,
     title: "Shopify App",
@@ -28,7 +28,7 @@ const projects = [
   }
 ];
 
-const skills = ["React", "Astro", "Tailwind", "Node.js", "TypeScript", "Supabase"];
+let skills = ["React", "Astro", "Tailwind", "Node.js", "TypeScript", "Supabase"];
 ---
 
 <main class="min-h-screen bg-white text-gray-900">
