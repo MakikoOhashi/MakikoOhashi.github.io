@@ -2,3 +2,206 @@
   <h1>My Portfolio</h1>
   <p>ここに紹介文やリンクを置く</p>
 </section>
+---
+// Dev Degree 2026 Component for Astro
+---
+
+<section class="dev-degree-section">
+  {/* Header with gradient background */}
+  <div class="header-banner">
+    <div class="header-content">
+      <div>
+        <h1 class="header-title">Dev Degree 2026</h1>
+        <div class="header-meta">
+          <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span class="meta-text">Americas</span>
+          <span class="meta-divider">|</span>
+          <span class="meta-text">Engineering & Data</span>
+        </div>
+      </div>
+      <button class="apply-button">Apply Now</button>
+    </div>
+  </div>
+
+  {/* Content section */}
+  <div class="content-section">
+    <h2 class="content-title">About the role</h2>
+    
+    <div class="content-blocks">
+      {/* First block */}
+      <div class="content-block">
+        <h3 class="block-title">What's Dev Degree?</h3>
+        <p class="block-text">
+          Shopify's Dev Degree program combines a Computer Science degree with hands-on work experience. Our unique
+          one-of-a-kind work-integrated learning model provides the skills and confidence to prepare you for a
+          career in Software Engineering. Throughout your Dev Degree journey, our team will guide, evaluate, and
+          provide you with actionable feedback to support your growth, and help you have an impact at Shopify!
+        </p>
+      </div>
+
+      {/* Second block */}
+      <div class="content-block">
+        <h3 class="block-title">What does a Dev Degree intern do?</h3>
+        <p class="block-text">
+          In your first year, you'll be working on the Developer Skills Training Path learning the tools,
+          technologies, and methodologies that will prepare you to join an Engineering team at Shopify. At the same
+          time, you'll be attending one of our <a href="#" class="link-underline">partner universities</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .dev-degree-section {
+    background-color: white;
+  }
+
+  .header-banner {
+    background: linear-gradient(to right, rgb(165, 243, 252), rgb(167, 243, 208), rgb(187, 247, 208));
+    border: 1px solid #333;
+    padding: 2rem 3rem;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: black;
+    margin: 0 0 1rem 0;
+    line-height: 1;
+  }
+
+  .header-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+  }
+
+  .pin-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgb(12, 133, 141);
+    flex-shrink: 0;
+  }
+
+  .meta-text {
+    color: black;
+    font-weight: 500;
+  }
+
+  .meta-divider {
+    color: black;
+    margin: 0 0.25rem;
+  }
+
+  .apply-button {
+    background-color: black;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+  }
+
+  .apply-button:hover {
+    background-color: #333;
+  }
+
+  .content-section {
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    padding: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .content-title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: black;
+    margin: 0 0 2rem 0;
+  }
+
+  .content-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .content-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .block-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+  }
+
+  .block-text {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .link-underline {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+
+  .link-underline:hover {
+    color: #666;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .header-title {
+      font-size: 2.5rem;
+    }
+
+    .header-meta {
+      justify-content: center;
+    }
+
+    .apply-button {
+      align-self: center;
+    }
+
+    .content-section {
+      padding: 1.5rem;
+    }
+
+    .content-title {
+      font-size: 1.75rem;
+    }
+  }
+</style>
+
