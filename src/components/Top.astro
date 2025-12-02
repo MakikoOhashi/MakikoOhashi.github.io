@@ -1,14 +1,12 @@
-
-
 <main class="min-h-screen bg-white text-gray-900">
   <!-- Hero Section -->
   <section class="py-20 px-4 md:py-32 md:px-8">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-        {name}
+        Your Name
       </h1>
       <p class="text-lg md:text-xl text-gray-600 mb-6">
-        {title} / {tagline}
+        Aspiring Developer / Building practical apps
       </p>
       <p class="text-base text-gray-700 leading-relaxed max-w-2xl">
         自立・責任・再現性のある力で価値を提供します。家庭と学習を両立しつつ継続的に開発中。
@@ -21,38 +19,113 @@
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold mb-12 text-gray-900">Works</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {projects.map((project) => (
-          <div class="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">
-              {project.title}
-            </h3>
-            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-              {project.description}
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              {project.stack.map((tech) => (
-                <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
-                  {tech}
-                </span>
-              ))}
-            </div>
-            <div class="flex gap-3">
-              <a 
-                href={project.github}
-                class="text-sm font-medium text-blue-600 hover:text-blue-700"
-                target="_blank"
-              >
-                GitHub →
-              </a>
-              <a 
-                href="#"
-                class="text-sm font-medium text-blue-600 hover:text-blue-700"
-              >
-                Demo →
-              </a>
-            </div>
+        <!-- Project 1 -->
+        <div class="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">
+            Shopify App
+          </h3>
+          <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+            Custom Shopify application for store management
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              React
+            </span>
+            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              Node.js
+            </span>
+            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              TypeScript
+            </span>
           </div>
-        ))}
+          <div class="flex gap-3">
+            <a 
+              href="https://github.com"
+              class="text-sm font-medium text-blue-600 hover:text-blue-700"
+              target="_blank"
+            >
+              GitHub →
+            </a>
+            <a 
+              href="#"
+              class="text-sm font-medium text-blue-600 hover:text-blue-700"
+            >
+              Demo →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">
+            Web App
+          </h3>
+          <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+            Full-stack web application with real-time features
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              React
+            </span>
+            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              Astro
+            </span>
+            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              Tailwind
+            </span>
+          </div>
+          <div class="flex gap-3">
+            <a 
+              href="https://github.com"
+              class="text-sm font-medium text-blue-600 hover:text-blue-700"
+              target="_blank"
+            >
+              GitHub →
+            </a>
+            <a 
+              href="#"
+              class="text-sm font-medium text-blue-600 hover:text-blue-700"
+            >
+              Demo →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">
+            Math Learning App
+          </h3>
+          <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+            Interactive math learning tool for elementary students
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              React
+            </span>
+            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              Supabase
+            </span>
+            <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
+              Tailwind
+            </span>
+          </div>
+          <div class="flex gap-3">
+            <a 
+              href="https://github.com"
+              class="text-sm font-medium text-blue-600 hover:text-blue-700"
+              target="_blank"
+            >
+              GitHub →
+            </a>
+            <a 
+              href="#"
+              class="text-sm font-medium text-blue-600 hover:text-blue-700"
+            >
+              Demo →
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -62,11 +135,24 @@
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold mb-8 text-gray-900">Skills</h2>
       <div class="flex flex-wrap gap-3">
-        {skills.map((skill) => (
-          <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-            {skill}
-          </span>
-        ))}
+        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+          React
+        </span>
+        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+          Astro
+        </span>
+        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+          Tailwind
+        </span>
+        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+          Node.js
+        </span>
+        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+          TypeScript
+        </span>
+        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+          Supabase
+        </span>
       </div>
     </div>
   </section>
