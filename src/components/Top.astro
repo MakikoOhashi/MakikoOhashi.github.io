@@ -1,10 +1,14 @@
+---
+import heroBg from '../assets/a.png';
+---
+
 <!-- Removed all exports and const - using pure HTML+CSS instead -->
 <main class="min-h-screen bg-white text-gray-900">
   <!-- Hero Section -->
-  <section class="h-32 flex items-center justify-center bg-gray-100">
-    <div class="text-center">
-      <h1 class="text-2xl font-bold">Makiko Ohashi</h1>
-      <p class="text-sm text-gray-600">Aspiring Developer</p>
+  <section class="h-32 flex items-center justify-center" style={`background-image: url(${heroBg.src}); background-size: cover; background-position: center;`}>
+    <div class="text-center bg-black bg-opacity-50 p-4 rounded">
+      <h1 class="text-2xl font-bold text-white">Makiko Ohashi</h1>
+      <p class="text-sm text-gray-200">Aspiring Developer</p>
     </div>
   </section>
 
