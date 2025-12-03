@@ -91,27 +91,6 @@ import honoluluImg from '../assets/HONOLULU.png';
     </div>
   </section>
 
-  <!-- Shopify Partner Projects Section -->
-  <section class="py-16 px-4 md:py-24 md:px-8 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold mb-12 text-gray-900 text-center">Shopify Partner Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-          <img src={daisukiImg.src} alt="DAISUKI" class="w-full h-48 object-cover rounded mb-4" />
-         
-        </div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-          <img src={discountImg.src} alt="DISCOUNT" class="w-full h-48 object-cover rounded mb-4" />
-          
-        </div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
-          <img src={honoluluImg.src} alt="HONOLULU" class="w-full h-48 object-cover rounded mb-4" />
-         
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Other Projects Section -->
   <section class="py-8 px-4 md:py-12 md:px-8">
     <div class="max-w-4xl mx-auto">
@@ -127,13 +106,20 @@ import honoluluImg from '../assets/HONOLULU.png';
 
 <!-- Other Shopify partner Section -->
   <section class="py-8 px-4 md:py-12 md:px-8 bg-gray-50">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4 text-gray-900">Shopify Partner Projects</h2>
-      <div class="space-y-2">
-        <div class="flex justify-between items-center">
-          <span class="font-medium">Web App</span>
-          <span class="text-sm text-gray-600"></span>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8">
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold mb-4 text-gray-900">Shopify Partner Projects</h2>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center">
+            <span class="font-medium">Web App</span>
+            <span class="text-sm text-gray-600"></span>
+          </div>
         </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <img src={daisukiImg.src} alt="DAISUKI" class="w-24 h-24 object-cover rounded" />
+        <img src={discountImg.src} alt="DISCOUNT" class="w-24 h-24 object-cover rounded" />
+        <img src={honoluluImg.src} alt="HONOLULU" class="w-24 h-24 object-cover rounded" />
       </div>
     </div>
   </section>
