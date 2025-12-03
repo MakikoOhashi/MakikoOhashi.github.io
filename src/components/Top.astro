@@ -1,6 +1,7 @@
 ---
 import heroBg from '../assets/a.png';
 import ttiImg from '../assets/TTI.png';
+import wakarumadeImg from '../assets/Wakarumade.png';
 ---
 
 <!-- Removed all exports and const - using pure HTML+CSS instead -->
@@ -38,18 +39,23 @@ import ttiImg from '../assets/TTI.png';
 
   <!-- WAKARUMADE Section -->
   <section class="py-16 px-4 md:py-24 md:px-8">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-8 text-gray-900">WAKARUMADE</h2>
-      <p class="text-lg mb-4"><strong>背景:</strong> 子の学習困り→自作</p>
-      <p class="text-lg mb-4"><strong>目的:</strong> 説明特化型の算数問題アプリ</p>
-      <div class="flex flex-wrap gap-2 mb-4">
-        <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">React</span>
-        <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Supabase</span>
-        <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Tailwind</span>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">WAKARUMADE</h2>
+        <p class="text-lg mb-4"><strong>背景:</strong> 子の学習困り→自作</p>
+        <p class="text-lg mb-4"><strong>目的:</strong> 説明特化型の算数問題アプリ</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">React</span>
+          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Supabase</span>
+          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Tailwind</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="https://github.com" class="text-blue-600 hover:underline" target="_blank">GitHub</a>
+          <a href="#" class="text-blue-600 hover:underline">Demo</a>
+        </div>
       </div>
-      <div class="flex gap-4">
-        <a href="https://github.com" class="text-blue-600 hover:underline" target="_blank">GitHub</a>
-        <a href="#" class="text-blue-600 hover:underline">Demo</a>
+      <div class="flex-1">
+        <img src={wakarumadeImg.src} alt="WAKARUMADE" class="w-full h-auto rounded-lg shadow-md" />
       </div>
     </div>
   </section>
