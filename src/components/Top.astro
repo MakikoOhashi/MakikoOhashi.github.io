@@ -109,33 +109,41 @@ import honoluluImg from '../assets/HONOLULU.png';
   <section class="py-16 px-4 md:py-24 md:px-8">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold mb-8 text-gray-900 text-center md:text-left">Other Projects</h2>
-      
-      <!-- Backend Experiments / Hackathons Toggle -->
+
+      <!-- Backend Experiments (Hackathons & Design Explorations) -->
       <div class="mb-8">
         <button class="toggle-btn flex items-center gap-2 text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors" data-target="backend-experiments">
           <span class="toggle-arrow">▸</span>
-          <span>Backend Experiments / Hackathons</span>
+          <span>Backend Experiments (Hackathons & Design Explorations)</span>
         </button>
-        
+
         <div id="backend-experiments" class="toggle-content hidden mt-6 space-y-6">
-          <!-- Deterministic Forecasting Backend -->
           <div class="flex flex-col gap-4">
-            <h3 class="text-xl font-bold text-gray-900">Deterministic Forecasting Backend (Hackathon Experiment)</h3>
-            <p class="mb-2">Built a backend-only forecasting prototype that separates deterministic demand calculations from AI-generated explanations.</p>
-            <p class="mb-2">Validated that explainability-first AI integration preserves reproducibility and auditability in forecasting systems.</p>
-            <p class="mb-4">Stopped before UI or automation to keep the project focused on backend orchestration and system design.</p>
+            <h3 class="text-xl font-bold text-gray-900">Deterministic Forecasting Backend</h3>
+            <p class="mb-2">Backend-only forecasting prototype that separates deterministic demand calculations from AI-generated explanations.</p>
+            <p class="mb-2 italic text-sm">This section focuses on backend design experiments — a concise log of architecture and reproducibility checks.</p>
             <div class="flex gap-4">
               <a href="https://github.com/MakikoOhashi/Forecast-Ready" class="text-blue-600 hover:underline" target="_blank">GitHub</a>
               <a href="https://youtu.be/wwGYLxHi4lw" class="text-blue-600 hover:underline" target="_blank">Demo Video</a>
               <a href="/docs/Motia_Certificates.pdf" class="text-blue-600 hover:underline" target="_blank">Certificates</a>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Natural Language Workflow Automation -->
-          <div class="flex flex-col gap-4 pt-6 border-t border-gray-200">
-            <h3 class="text-xl font-bold text-gray-900">Natural Language Workflow Automation (Hackathon Experiment)</h3>
-            <p class="mb-2">Built an automation pipeline that converts user intents into structured sales transactions with validation and error handling.</p>
-            <p class="mb-4">Demonstrated that integrating intent extraction, follow-up prompting, and workflow orchestration reduces manual data entry without sacrificing control.</p>
+      <!-- Workflow & Automation Experiments -->
+      <div class="mb-8">
+        <button class="toggle-btn flex items-center gap-2 text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors" data-target="workflow-experiments">
+          <span class="toggle-arrow">▸</span>
+          <span>Workflow & Automation Experiments</span>
+        </button>
+
+        <div id="workflow-experiments" class="toggle-content hidden mt-6">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-xl font-bold text-gray-900">Natural Language Workflow Automation</h3>
+            <p class="mb-2">Explored natural-language-driven workflow automation for operational tasks.</p>
+            <p class="mb-2">Learned the limits of language interfaces in multi-step business processes.</p>
+            <p class="mb-4">Did not continue as a backend-first system.</p>
             <div class="flex gap-4">
               <a href="https://github.com/MakikoOhashi/sales-reservation-agent" class="text-blue-600 hover:underline" target="_blank">GitHub</a>
               <a href="https://www.youtube.com/watch?v=sz1uaFGe8ds" class="text-blue-600 hover:underline" target="_blank">Demo Video</a>
@@ -144,17 +152,26 @@ import honoluluImg from '../assets/HONOLULU.png';
           </div>
         </div>
       </div>
-      
-      <!-- Ambulance Dispatch Activity Logger -->
-      <div class="flex flex-col gap-4 mb-8 p-4 border-t border-gray-200 pt-6">
-        <h3 class="text-lg font-semibold text-gray-900">Ambulance Dispatch Activity Logger</h3>
-        <p>Built full-stack backend for ambulance dispatch activity logging system. Frontend UI provided; I architected Supabase database, implemented authentication + API layer, deployed to production.</p>
-        <p><strong>Delivered:</strong> Oct 2025</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Next.js</span>
-          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Supabase</span>
-          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">TypeScript</span>
-          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Vercel</span>
+
+      <!-- Applied Systems / Client Work -->
+      <div class="mb-8">
+        <button class="toggle-btn flex items-center gap-2 text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors" data-target="applied-systems">
+          <span class="toggle-arrow">▸</span>
+          <span>Applied Systems / Client Work</span>
+        </button>
+
+        <div id="applied-systems" class="toggle-content hidden mt-6">
+          <div class="flex flex-col gap-4 p-4 border-t border-gray-200 pt-6">
+            <h3 class="text-lg font-semibold text-gray-900">Ambulance Dispatch Activity Logger</h3>
+            <p>Designed and delivered an operational logging system for ambulance dispatch activities, focusing on traceability, reliability, and real-world constraints.</p>
+            <p><strong>Delivered:</strong> Oct 2025</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Next.js</span>
+              <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Supabase</span>
+              <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">TypeScript</span>
+              <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Vercel</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
