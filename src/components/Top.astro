@@ -160,8 +160,24 @@ import honoluluImg from '../assets/HONOLULU.png';
           <span>Workflow & Automation Experiments</span>
         </button>
 
-        <div id="workflow-experiments" class="toggle-content hidden mt-6">
+        <div id="workflow-experiments" class="toggle-content hidden mt-6 space-y-6">
           <div class="flex flex-col gap-4 p-4 border-t border-gray-200 pt-6">
+            <h3 class="text-xl font-bold text-gray-900">Ruidaichan – AI-to-PDF Math Worksheet Generator (iOS + Server)</h3>
+            <p class="mb-2">iOS-native app that generates printable A4 math worksheets from photographed problems.</p>
+            <p class="mb-2"><strong>Key features:</strong></p>
+            <ul class="list-disc list-inside mb-2 space-y-1">
+              <li>Free-tier quota enforcement with Redis (monthly caps, atomic Lua)</li>
+              <li>Privacy-first design (no image retention, minimal identifiers)</li>
+              <li>Designed to pass App Store review with minimal UX friction</li>
+            </ul>
+            <p class="mb-2"><strong>Status:</strong> iOS App (Under Review)</p>
+            <div class="flex gap-4">
+              <a href="https://github.com/MakikoOhashi/ruidaichan" class="text-blue-600 hover:underline" target="_blank">GitHub (iOS App)</a>
+              <a href="https://github.com/MakikoOhashi/ruidaichan-api" class="text-blue-600 hover:underline" target="_blank">GitHub (Server)</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4 p-4 border-t border-gray-100 pt-6">
             <h3 class="text-xl font-bold text-gray-900">Natural Language Workflow Automation(Hackathon Experiment)</h3>
             <p class="mb-2">Explored natural-language-driven workflow automation for operational tasks.</p>
             <p class="mb-2">Learned the limits of language interfaces in multi-step business processes.</p>
