@@ -228,28 +228,17 @@ import honoluluImg from '../assets/HONOLULU.png';
           </div>
 
           <div class="flex flex-col gap-4 p-4 border-t border-gray-100 pt-6">
-            <h3 class="text-xl font-bold text-gray-900">Pencil Stuck Marker — Controlled Evaluation & Stabilization of AI Output</h3>
-            <p>Generative AI (e.g., Gemini / LLM) frequently produces outputs that can vary
-in structure, quality, or reliability even with similar inputs.</p>
-            <p>This project implements a pipeline to evaluate and control the quality of generated outputs,
-rather than accepting them at face value.</p>
-            <p><strong>Key components:</strong></p>
-            <ul class="list-disc list-inside mb-2 space-y-1">
-              <li>A scoring mechanism to quantify output quality
-(e.g., consistency, informational density, difficulty alignment)</li>
-              <li>Defined evaluation criteria</li>
-              <li>A control loop that triggers regeneration when outputs fall below thresholds</li>
-              <li>Python-based evaluation and orchestration pipeline</li>
-            </ul>
-            <p>By doing so, this project enables:</p>
-            <ul class="list-disc list-inside mb-2 space-y-1">
-              <li>More reliable and interpretable AI output</li>
-              <li>Generation with measurable quality constraints</li>
-              <li>A foundation for predictable AI-assisted workflows</li>
-            </ul>
-            <p>This project represents not just generation, but quality-aware generation control.</p>
-            <p class="mt-2"><strong>GitHub:</strong> <a href="https://github.com/MakikoOhashi/pencil-stuck-marker" class="text-blue-600 hover:underline" target="_blank">https://github.com/MakikoOhashi/pencil-stuck-marker</a></p>
-            <p>Status: Submitted to <a href="https://www.wemakedevs.org/hackathons/vision" class="text-blue-600 hover:underline" target="_blank">WeMakeDevs Vision Hackathon</a>.</p>
+            <h3 class="text-xl font-bold text-gray-900">Pencil Stuck Marker</h3>
+            <p>Evaluation-driven control pipeline for stabilizing AI-generated outputs.</p>
+            <p>Implements structured scoring and regeneration loops to ensure quality before acceptance.</p>
+            <p><strong>Control axes:</strong> Consistency / Informational Density / Difficulty Alignment</p>
+            <p><strong>States:</strong> Accept / Regenerate / Reject</p>
+            <p><strong>Infra:</strong> Python (evaluation & orchestration)</p>
+            <p>Built for WeMakeDevs Vision Hackathon</p>
+            <div class="flex gap-4 mt-2">
+              <a href="https://github.com/MakikoOhashi/pencil-stuck-marker" class="text-blue-600 hover:underline" target="_blank">GitHub</a>
+              <a href="https://www.youtube.com/watch?v=FxaYav5PJaU" class="text-blue-600 hover:underline" target="_blank">Demo Video</a>
+            </div>
           </div>
 
         </div>
