@@ -4,6 +4,7 @@ import wakarumadeImg from '../assets/Wakarumade-ios.png';
 import daisukiImg from '../assets/DAISUKI.png';
 import discountImg from '../assets/DISCOUNT.png';
 import honoluluImg from '../assets/HONOLULU.png';
+import headerPattern from '../assets/back.png';
 
 const currentYear = new Date().getFullYear();
 ---
@@ -11,8 +12,16 @@ const currentYear = new Date().getFullYear();
 <!-- Removed all exports and const - using pure HTML+CSS instead -->
 <main class="min-h-screen bg-white text-gray-900">
   <!-- Hero Section -->
-  <section class="px-4 py-16 md:px-8 md:py-24 border-b border-gray-100">
-    <div class="max-w-6xl mx-auto">
+  <section class="relative overflow-hidden px-4 py-16 md:px-8 md:py-24 border-b border-gray-100">
+    <div class="absolute right-[-120px] top-1/2 hidden -translate-y-1/2 md:block">
+      <img
+        src={headerPattern.src}
+        alt=""
+        aria-hidden="true"
+        class="w-[360px] max-w-none opacity-25 lg:w-[460px]"
+      />
+    </div>
+    <div class="relative z-10 max-w-6xl mx-auto">
       <h1 class="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">Makiko Ohashi</h1>
       <p class="mt-6 max-w-3xl text-lg leading-relaxed text-gray-700 md:text-xl">
         Textile trading professional turned self-taught product engineer.
