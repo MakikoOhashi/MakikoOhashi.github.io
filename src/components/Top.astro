@@ -5,6 +5,8 @@ import wakarumadeImg from '../assets/Wakarumade-ios.png';
 import daisukiImg from '../assets/DAISUKI.png';
 import discountImg from '../assets/DISCOUNT.png';
 import honoluluImg from '../assets/HONOLULU.png';
+
+const currentYear = new Date().getFullYear();
 ---
 
 <!-- Removed all exports and const - using pure HTML+CSS instead -->
@@ -313,7 +315,7 @@ import honoluluImg from '../assets/HONOLULU.png';
   <!-- Footer -->
   <footer class="py-8 px-4 md:px-8 border-t border-gray-200">
     <div class="max-w-4xl mx-auto flex justify-between items-center text-sm text-gray-600">
-      <p>© 2025 MakikoOhashi</p>
+      <p>© {currentYear} MakikoOhashi</p>
       <div class="flex gap-4">
         <a href="https://github.com/MakikoOhashi" class="hover:text-gray-900">GitHub</a>
         <a href="mailto:ohashinaomaki@gmail.com" class="hover:text-gray-900">Email</a>
