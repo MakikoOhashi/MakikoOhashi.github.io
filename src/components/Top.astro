@@ -1,5 +1,6 @@
 ---
 import ttiImg from '../assets/Inbound.png';
+import pocketShiroiroImg from '../assets/PocketShiroiro-ios.png';
 import wakarumadeImg from '../assets/Wakarumade-ios.png';
 import daisukiImg from '../assets/DAISUKI.png';
 import discountImg from '../assets/DISCOUNT.png';
@@ -58,6 +59,36 @@ const currentYear = new Date().getFullYear();
         <a href="https://apps.shopify.com/tracktoinventory?locale=en" class="block" target="_blank">
           <img src={ttiImg.src} alt="Inbound Tracking" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow" />
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pocket Shiroiro Section -->
+  <section class="py-16 px-4 md:py-24 md:px-8">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900 text-center md:text-left">
+          <span class="block">Pocket Shiroiro</span>
+          <span class="block text-2xl md:text-2xl">- iOS Bookkeeping App</span>
+        </h2>
+        <p class="mb-4">A lightweight bookkeeping app for Japanese sole proprietors.</p>
+        <p class="mb-4">Built to make white-tax-return bookkeeping simple: users can record income and expenses, categorize transactions, and save their data directly to their own Notion database.</p>
+        <p class="mb-4">The app focuses on practical solo-business workflows rather than full accounting software complexity.</p>
+        <p class="mb-4">Available on the <a href="https://apps.apple.com/jp/app/pocket-shiroiro/id6777675053" class="text-blue-600 hover:underline" target="_blank"><span class="font-semibold cursor-pointer">App Store</span></a>. Includes a <a href="https://www.notion.com/ja/templates/pocket-shiroiro?clientBuildTarget=client" class="text-blue-600 hover:underline" target="_blank"><span class="font-semibold cursor-pointer">Notion template</span></a> for saving bookkeeping data.</p>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">SwiftUI</span>
+          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Notion API</span>
+          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">Cloudflare Workers</span>
+          <span class="text-sm px-2 py-1 bg-gray-200 text-gray-700 rounded">StoreKit</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="https://apps.apple.com/jp/app/pocket-shiroiro/id6777675053" class="text-blue-600 hover:underline" target="_blank">App Store</a>
+          <a href="https://www.notion.com/ja/templates/pocket-shiroiro?clientBuildTarget=client" class="text-blue-600 hover:underline" target="_blank">Notion Template</a>
+        </div>
+      </div>
+      <div class="flex-1">
+        <img src={pocketShiroiroImg.src} alt="Pocket Shiroiro" class="w-full h-auto rounded-lg" />
       </div>
     </div>
   </section>
